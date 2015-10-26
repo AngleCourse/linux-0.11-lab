@@ -29,7 +29,7 @@ nullstring :=
 QEMU_DBG = $(nullstring) -s -S #-nographic #-serial '/dev/ttyS0'"
 
 BOCHS_CFG = tools/bochs/bochsrc/
-BOCHS_CMD = $(BOCHS) -f $(BOCHS_CFG)/bochsrc-fda.bxrc
+BOCHS_CMD = $(BOCHS) -q -f $(BOCHS_CFG)/bochsrc-fda.bxrc
 BOCHS_CMD_FDB = $(BOCHS) -f $(BOCHS_CFG)/bochsrc-fdb.bxrc
 BOCHS_CMD_HDA = $(BOCHS) -f $(BOCHS_CFG)/bochsrc-hd.bxrc
 BOCHS_DBG = .dbg

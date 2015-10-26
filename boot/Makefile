@@ -2,6 +2,7 @@ include ../Makefile.header
 
 LDFLAGS	+= -Ttext 0
 
+
 all: bootsect setup
 
 bootsect: bootsect.s
